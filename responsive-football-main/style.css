@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/*----------
+   top part
+---------- */
+.top{
+    display: flex;
+    background-color: #2D25A0;
+    height:677px;
+   
+}
+.half-width{
+    width:50%;
+
+}
+.half-width img{
+    width: 556px;
+    height: 456px;
+    margin-top: 135px;
+
+}
+#fonttop{
+    color: #FFFFFF;
+    margin-left: 156px;
+    margin-top: 207px;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 27px;
+    
+}
+.btn{
+    font-size: 16px;
+    font-weight: 500px;
+    color: white;
+    text-decoration: none;
+    background-color:#E02C6D;
+    padding: 10px 24px;
+    margin-left: 156px;
+    Width :168px;
+    Height :44px;
+}
+.fas.fa-arrow-right{
+    margin-left: 12px;
+}
+/* -------------
+   player part
+-------------- */
+.middle{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:30px;
+    width:870px;
+    
+}
+.players{
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    width: 330px;
+    height: 474px;
+    margin-top: 70px;
+    padding-top: 15px;
+    padding-left: 15px;
+    align-items: center;
+}
+.player .player-pic img{
+    width: 300px;
+    height: 256px;
+    
+}
+.player-detail{
+    align-items: center;
+    justify-content: space-between;
+}
