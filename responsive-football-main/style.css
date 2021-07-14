@@ -7,12 +7,15 @@ body{
 /*----------
    top part
 ---------- */
+
 .top{
     display: flex;
-    background-color: #2D25A0;
+    background-color:#2D25A0;
+    width: 100%;
     height:677px;
    
 }
+
 .half-width{
     width:50%;
 
@@ -22,6 +25,10 @@ body{
     height: 456px;
     margin-top: 135px;
 
+}
+.top:hover .half-width img{
+    transform: rotate(360deg);
+    transition: 0.5s ease-in;
 }
 #fonttop{
     color: #FFFFFF;
@@ -43,35 +50,217 @@ body{
     Width :168px;
     Height :44px;
 }
+.btn:hover{
+    background-color: rgb(87, 189, 230);
+    
+}
 .fas.fa-arrow-right{
     margin-left: 12px;
 }
 /* -------------
    player part
 -------------- */
-.middle{ 
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap:30px;
-    width:870px;
-    
+h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+h3:hover{
+    color:#2D25A0 ;
+}
+
+.middle{
+    width: 1080px;
+    margin-top: 70px;
+    margin-left: 180px;
+   
 }
 .players{
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1px;
+    margin-top: 70px;
+   
+}
+.player{
+    display: flex;
+    flex-direction: column;
     width: 330px;
     height: 474px;
-    margin-top: 70px;
     padding-top: 15px;
-    padding-left: 15px;
+    margin-top: 27px;
     align-items: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
+
 }
 .player .player-pic img{
     width: 300px;
     height: 256px;
+    margin-bottom: -19px;
     
 }
 .player-detail{
-    align-items: center;
-    justify-content: space-between;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.player-detail h3{
+    margin-bottom: 0;
+
+}
+.player-info{
+    color:#6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.player-info{
+    margin-top: 10px;
+
+}
+
+/*----------------
+      highlight
+      ------------- */
+.highlight{
+     display: flex;
+     align-items: center;
+    
+ }
+.half-width2{
+
+     width:50%;
+ }
+.half-width2 img{
+     width: 567px;
+     height: 427px;
+     margin-top: 143px;
+     margin-right: 100px;
+}
+ .fontdown{
+     color: #0A0826;
+     margin-left: 156px;
+     margin-top: 146px;
+     font-size: 48px;
+     line-height: 60px;
+        
+}
+.palign{
+    margin-top: -32px;
+    margin-bottom: 24px;
+    margin-left: 156px;
+    font-size: 16px;
+    line-height: 28px;
+    padding-right: 131px;
+    color: #6C6C6C;
+
+}
+.btn{
+     font-size: 16px;
+     font-weight: 500px;
+     color: white;
+     text-decoration: none;
+     background-color:#E02C6D;
+     padding: 10px 24px;
+     margin-left: 156px;
+     Width :168px;
+     Height :44px;
+    }    
+
+    /* -----------
+       footer part
+    ------------ */
+    .footer{
+        display:flex;
+        flex-direction:column ;
+        align-items: center;
+    }
+    .footer-logo img{
+        width: 483.87px;
+        height: 110px;
+        margin-top: 151px;
+        margin-bottom: 12px;
+    }
+    .footer-icon{
+        display: flex;
+        width: 32px;
+        margin-right: 70px;
+        margin-bottom: 0px;
+    }
+    .fab{
+        font-size: 20px;
+        width: 32px;
+        color: #969BAB;
+        
+    }
+    .fab:hover {
+        color: #2D25A0;
+    }
+    .copyright{
+    
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+        margin-bottom: 63px;
+    }
+
+    /*-----------------------
+    media queries for mobile
+    ------------------------ */
+    @media only screen and (max-width: 688px){
+    .top{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        background-color:#2D25A0;
+        height:695px;
+    }
+    .half-width{
+        width:50%;
+    
+    } 
+    .half-width img{
+        
+        width: 329px;
+        height: 259px;
+        margin-top: 50px;
+        margin-left: 16px;
+    }
+    .top{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    .highlight{
+         width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #fonttop{
+        width :278px;
+        height: 138px;
+        margin-top :112px;
+        margin-left :16px;
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 30px;
+        
+    }
+    .btn{
+        width:168px;
+        height :44px;
+        margin-top: 280px;
+        margin-left:19px;
+        font-size: 16px;
+        font-weight: 500px;
+        color: white;
+        text-decoration: none;
+        background-color:#E02C6D;
+        padding: 10px 24px;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
