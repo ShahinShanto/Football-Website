@@ -219,6 +219,12 @@ h3:hover{
         width:50%;
     
     } 
+    main{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
     .half-width img{
         
         width: 329px;
@@ -231,13 +237,9 @@ h3:hover{
         
     }
     .players{
+        width: 100%;
         grid-template-columns: repeat(1,1fr);
     } 
-    .highlight{
-         width:100%;
-        display: flex;
-        flex-direction: column;
-    }
     #fonttop{
         width :278px;
         height: 138px;
@@ -252,7 +254,7 @@ h3:hover{
         width:168px;
         height :44px;
         margin-top: 280px;
-        margin-left:19px;
+        margin-left:16px;
         font-size: 16px;
         font-weight: 500px;
         color: white;
@@ -261,6 +263,51 @@ h3:hover{
         padding: 10px 24px;
     }
     .players{
+        margin-left: 0;
         grid-template-columns: repeat(1,1fr);
+        
     }
+    .highlight{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .half-width2{
+        width:50%;
+    
+    } 
+    .half-width2 img{
+        
+        width: 328px;
+        height: 248px;
+        margin-top: 29px;
+        margin-left: 16px;
+    }
+    .highlight{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .fontdown{
+        color: #0A0826;
+        margin-left: 16px;
+        margin-top: 60px;
+        font-size: 30px;
+        line-height: 40px;
+           
+   }
+   .palign{
+       margin-top: 8px;
+       margin-bottom: 24px;
+       margin-left: 16px;
+       font-size: 16px;
+       line-height: 28px;
+       color: #6C6C6C;
+       padding-right: 0;
+   
+   }
+   .middle{
+
+    width: 100%;
+    margin-left: 0;
+}
 }
